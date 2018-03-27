@@ -14,3 +14,7 @@ var iceCream = 'chocolate';
 
 var id = prompt ('ID입력','');
 alert(id+'가 로그인 함');
+var passwordsystem = '12345';
+var password = prompt ('PW입력','');
+if (password === passwordsystem) alert('정상로그인!');
+else alert('비밀번호 오류');
