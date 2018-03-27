@@ -5,18 +5,13 @@
 </head>
 
 <body>
-    This is a test.
     <script>
-        var a = ['a', 'b', 'c', 'd'];
-        var size = a.length;
-        var c = a[1];
-        //a.push('tiger');
-       // a.concat(['x', 'y', 'z']);
-       a.unshift('zero');
-       a.reverse();
-        alert(a + '\n' + size + '\n' +c);
-
-    
+       function myFun(arg1, arg2) {
+          alert("arg # =" +  arguments.length);
+           return arg1 + arg2;
+       }
+       var a = myFun('abc', 'xyz', '123');
+       alert("fun # =" + myFun.length);
 
     </script>
 </body>
