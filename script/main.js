@@ -68,17 +68,6 @@ mybutton.onclick = function () {
 }
 */
 
-
-
-
-
-
-
-
-
-
-
-
 /*var text = 'this is a text.';
 text = 10.5; //이렇게 지맘대로 타입을 바꿔줘도 탈이 없는게 자바스크립트의 특징.
 var a = 33.7;
