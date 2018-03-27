@@ -1,8 +1,11 @@
 var myHeading = document.querySelector('h1');
-myHeading.innerHTML = 'cloude Service<br>HELLO';
+var id = localStorage.getItem('id');
+myHeading.innerHTML = id + 'homepage';
+
 function getIdPw() {
     var id = prompt ('ID입력','');
 alert(id+'가 로그인 함');
+localStorage.setItem('id',id);
 var passwordsystem = '12345';
 var password = prompt ('PW입력','');
 if (password === passwordsystem) alert('정상로그인!');
@@ -26,6 +29,12 @@ myImage.onclick = function() {
       myImage.setAttribute ('src','images/firefox-icon.png');
     }//document라는 전체 객채중에서 함수객체를 선택하고 그중에 이미지를 클릭할수 있는 함수를 주고 클릭하면 이미지가 변환
 }
+
+var mybutton = document.querySelector('button');
+mybutton.onclick = function(){
+    getIdPw();
+}
+
 
 
 
