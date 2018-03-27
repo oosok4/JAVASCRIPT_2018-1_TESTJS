@@ -7,11 +7,14 @@
 <body>
     This is a test.
     <script>
-        var a = 'abc';
-        var b = a.toUpperCase();
-        alert(a);
-        var size = b.length;
-        alert(b + "with size=" + size);
+        var a = ['a', 'b', 'c', 'd'];
+        var size = a.length;
+        var c = a[1];
+        //a.push('tiger');
+       // a.concat(['x', 'y', 'z']);
+       a.unshift('zero');
+       a.reverse();
+        alert(a + '\n' + size + '\n' +c);
 
     
 
